@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Vitae</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo"><a href="index.html">Curriculum Vitae</a></div>
+        <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>    
+        <div class="menu" id="menu">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </header>
+
+    <main>
+        <div class="card">
+            <h1>Curriculum Vitae</h1>
+            <p>Cv. ini dibuat hanya untuk diri sendiri.</p>
+            <a href="rado.html" class="btn">Silahkan cek Cv. Rado</a>
+            <a href="yuli.html" class="btn">Silahkan cek Cv. Yuli</a>
+            <a href="reza.html" class="btn">Silahkan cek Cv. Reza</a>
+        </div>
+    </main>
+    <script>
+        // Toggle menu
+        function toggleMenu() {
+            const menu = document.getElementById('menu');
+            const hamburger = document.getElementById('hamburger');
+            menu.classList.toggle('show');
+            hamburger.classList.toggle('open');
+        }
+    </script>
+</body>
+</html>

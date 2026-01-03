@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layanan kami</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo"><a href="index.html">Curriculum Vitae</a></div>
+        <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>    
+        <div class="menu" id="menu">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </header>
+
+    <section id="services" class="services">
+        <h1>Layanan Kami</h1>
+        <p>Di Buana Visualnet Sentra, kami menyediakan solusi internet dan jaringan untuk memberi kenyamanan Anda. Dari kenyamanan sosial media hingga kelancaran dalam mengerjakan tugas sekolah/kuliah Anda, tim ahli kami siap mendukung kebutuhan Anda.</p>
+        <div class="service-card">
+            <h3>Koneksi Internet Berkualitas Tinggi</h3>
+            <p>Kami menyediakan konektivitas internet yang andal dan berkualitas. Cocok untuk rumah tangga dan bisnis anda.</p>
+        </div>
+        <div class="service-card">
+            <h3>Menawarkan Berbagai Harga</h3>
+            <p>Kami menarkan berbagai paket harga dan memberi layanan yang terbaik.</p>
+            <p>Berikut adalah paket yang kami tawarkan:</p>
+            <p><strong>1. </strong>Kecepatan: 10 mbps | Harga: Rp.220.000/Bulan</p>
+            <p><strong>2. </strong>Kecepatan: 20 mbps | Harga: Rp.258.000/Bulan</p>
+            <p><strong>3. </strong>Kecepatan: 30 mbps | Harga: Rp.290.000/Bulan</p>
+            <p><strong>4. </strong>Kecepatan: 50 mbps | Harga: Rp.360.000/Bulan</p>
+        </div>
+        <div class="service-card">
+            <h3>berkontribusi pada pembangunan</h3>
+            <p>Untuk berkontribusi pada pengembangan masyarakat dan ekonomi lokal melalui penyediaan layanan internet.</p>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <h2>Testimoni Klien</h2>
+        <p>"Saya sangat terkesan dengan pelayanan cepat tanggap dari tim teknisi BVS. Saat ada kendala, mereka langsung datang dan menyelesaikannya dengan efisien. Luar biasa!"</p>
+        <p>"Jaringan internetnya cepat dan stabil, sangat membantu pekerjaan saya sebagai konten kreator. Proses upload video dan foto jadi lebih mudah dan cepat"</p>
+    </section>
+
+    <section class="cta">
+        <h2>Siap untuk Memulai?</h2>
+        <p>Hubungi kami hari ini untuk konsultasi gratis.</p>
+        <a class="btnn" href="contact.html">Hubungi Kami</a>
+    </section>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('menu');
+            const hamburger = document.getElementById('hamburger');
+            menu.classList.toggle('show');
+            hamburger.classList.toggle('open');
+        }
+    </script>
+</body>
+</html>
